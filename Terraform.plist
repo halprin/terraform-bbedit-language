@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BBEditDocumentType</key>
+	<string>CodelessLanguageModule</string>
+	<key>BBLMLanguageDisplayName</key>
+	<string>Terraform</string>
+	<key>BBLMLanguageCode</key>
+	<string>HCCL</string>
+	<key>BBLMSuffixMap</key>
+	<array>
+		<dict>
+			<key>BBLMLanguageSuffix</key>
+			<string>.tf</string>
+		</dict>
+	</array>
+	<key>BBLMPreferredFilenameExtension</key>
+	<string>tf</string>
+	<key>BBLMCanSpellCheckCodeRuns</key>
+	<false/>
+	<key>BBLMIsCaseSensitive</key>
+	<true/>
+	<key>BBLMScansFunctions</key>
+	<true/>
+	<key>BBLMColorsSyntax</key>
+	<true/>
+	<key>BBLMKeywordList</key>
+	<array>
+		<string>=</string>
+		<string>:</string>
+	</array>
+	<key>BBLMPredefinedNameList</key>
+	<array>
+		<string>true</string>
+		<string>false</string>
+		<string>module</string>
+		<string>data</string>
+		<string>variable</string>
+		<string>provider</string>
+		<string>terraform</string>
+		<string>backend</string>
+	</array>
+	<key>BBLMCommentLineDefault</key>
+	<string>#</string>
+	<key>BBLMCommentPrefixDefault</key>
+	<string>/*</string>
+	<key>BBLMCommentSuffixDefault</key>
+	<string>*/</string>
+	<key>Language Features</key>
+	<dict>
+		<key>Identifier and Keyword Character Class</key>
+		<string>A-Za-z0-9_</string>
+		<key>Comment Pattern</key>
+		<string>(#.*$)|(?s:/\*.*?\*/)</string>
+		<key>String Pattern</key>
+		<string>(&quot;(\\&quot;|[^&quot;\r]|\\\r)*&quot;)|(?s:&lt;&lt;-?(?P&lt;delim&gt;\w+).*?^(?P=delim))</string>
+		<key>Function Pattern</key>
+		<string>(?x:
+	(?P&lt;function&gt;
+		(?P&lt;function_name&gt;
+			[\w]+
+			(
+				([\s]+?&quot;[\S]*?&quot;)?
+				([\s]+?&quot;[\S]*?&quot;)?
+			)?
+		)
+		[\s]+?
+		(?=\{(?P&lt;capture&gt;(?:[^{}]+|\{(?&amp;capture)\})+)\})
+	)
+)</string>
+		<key>Skip Pattern</key>
+		<string>(?P&gt;string)|(?P&gt;comment)</string>
+	</dict>
+</dict>
+</plist>
