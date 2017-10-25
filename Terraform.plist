@@ -27,19 +27,18 @@
 	<true/>
 	<key>BBLMKeywordList</key>
 	<array>
-		<string>=</string>
-		<string>:</string>
-	</array>
-	<key>BBLMPredefinedNameList</key>
-	<array>
-		<string>true</string>
-		<string>false</string>
 		<string>module</string>
 		<string>data</string>
 		<string>variable</string>
 		<string>provider</string>
 		<string>terraform</string>
 		<string>backend</string>
+		<string>provisioner</string>
+	</array>
+	<key>BBLMPredefinedNameList</key>
+	<array>
+		<string>true</string>
+		<string>false</string>
 	</array>
 	<key>BBLMCommentLineDefault</key>
 	<string>#</string>
