@@ -25,20 +25,20 @@
 	<true/>
 	<key>BBLMColorsSyntax</key>
 	<true/>
-	<key>BBLMKeywordList</key>
+	<key>BBLMKeywordPatterns</key>
 	<array>
-		<string>module</string>
-		<string>data</string>
-		<string>variable</string>
-		<string>provider</string>
-		<string>terraform</string>
-		<string>backend</string>
-		<string>provisioner</string>
-	</array>
-	<key>BBLMPredefinedNameList</key>
-	<array>
-		<string>true</string>
-		<string>false</string>
+		<dict>
+			<key>RunKind</key>
+			<string>com.barebones.bblm.keyword</string>
+			<key>Pattern</key>
+			<string>module|data|variable|provider|terraform|backend|provisioner</string>
+		</dict>
+		<dict>
+			<key>RunKind</key>
+			<string>com.barebones.bblm.predefined-symbol</string>
+			<key>Pattern</key>
+			<string>true|false</string>
+		</dict>
 	</array>
 	<key>BBLMCommentLineDefault</key>
 	<string>#</string>
