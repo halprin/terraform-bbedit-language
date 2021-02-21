@@ -9,3 +9,7 @@ current user.
 ```
 curl https://raw.githubusercontent.com/halprin/terraform-bbedit-language/master/Terraform.plist > ~/Library/Application\ Support/BBEdit/Language\ Modules/Terraform.plist
 ```
+
+## Contributing
+
+I accept PRs!  Read [`CONTRIBUTING.md`](./CONTRIBUTING.md) for some light details.
